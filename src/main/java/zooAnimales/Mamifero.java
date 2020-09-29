@@ -43,13 +43,13 @@ public class Mamifero extends Animal {
 	
 	//METODOS ADICIONALES
 
-	public Mamifero crearCaballo(String nombre, int edad, String genero) {
+	public static Mamifero crearCaballo(String nombre, int edad, String genero) {
 		Mamifero cabaio = new Mamifero(nombre, edad, "pradera", genero, true, 4);
 		caballos++;
 		return cabaio;
 	}
 
-	public Mamifero crearLeon(String nombre, int edad, String genero) {
+	public static Mamifero crearLeon(String nombre, int edad, String genero) {
 		Mamifero lion = new Mamifero(nombre, edad, "selva", genero, true, 4);
 		leones++;
 		return lion;

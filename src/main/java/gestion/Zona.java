@@ -12,10 +12,9 @@ public class Zona {
 	
 	//CONSTRUCTORES
 	
-	public Zona(String nombre, Zoologico zoo, List<Animal> animales) {
+	public Zona(String nombre, Zoologico zoo) {
 		this.nombre = nombre;
 		this.zoo = zoo;
-		this.animales = animales;
 	}
 	
 	public Zona() {

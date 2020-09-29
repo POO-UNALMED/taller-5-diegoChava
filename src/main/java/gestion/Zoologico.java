@@ -13,10 +13,9 @@ public class Zoologico {
 	public Zoologico() {
 		
 	}
-	public Zoologico(String nombre, String ubicacion, List<Zona> zonas) {
+	public Zoologico(String nombre, String ubicacion) {
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
-		this.zonas = zonas;
 	}
 	
 	//METODOS GET Y SET
@@ -33,10 +32,10 @@ public class Zoologico {
 	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
 	}
-	public List<Zona> getZonas() {
+	public List<Zona> getZona() {
 		return zonas;
 	}
-	public void setZonas(List<Zona> zonas) {
+	public void setZona(List<Zona> zonas) {
 		this.zonas = zonas;
 	}
 	
