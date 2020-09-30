@@ -44,10 +44,14 @@ public class Zoologico {
 	
 	public void agregarZonas(Zona zona) {
 		zonas.add(zona);
-		((Zona) zonas).setZoo(this);
+		((Zona) zona).setZoo(this);
 	}
 	public int cantidadTotalAnimales() {
-		return((Zona) zonas).cantidadAnimales();
+		int cantidadAnimales = 0;
+		for (Zona zona : zonas) {
+			cantidadAnimales += zona.cantidadAnimales();
+		}
+		return cantidadAnimales;
 	}
 
 }

@@ -48,7 +48,12 @@ public class Zona {
 		animales.add(animal);
 	}
 	public int cantidadAnimales() {
-		return ((Animal) animales).getTotalAnimales();
+		if (animales.isEmpty()) {
+			return 0;
+		}
+		else {
+			return animales.size(); 
+		}
 	}
 
 }
